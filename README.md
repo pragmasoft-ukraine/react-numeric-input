@@ -1,10 +1,14 @@
-# React numeric component
+# React numeric input component
 
 Designed to work seamlessly with [react-hook-form](https://react-hook-form.com/)
 
 Wraps native input using `Proxy` exposed with `useImperativeHandle`
 
 Unstyled, like the native html input. Add `className='no-spinner'` to suppress native numeric input spinner controls
+
+# React date input component
+
+Also wraps native date input, allowing to set component's value with the `Date` in addition to the 'yyyy-mm-dd' formatted string, like `input.valueAsDate = new Date()` does. This allows hook form binding to models containing date values.
 
 ## Build
 
