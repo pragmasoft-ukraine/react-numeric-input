@@ -16,7 +16,10 @@
     "jsx": "react-jsx",
     "composite": true,
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "sourceMap": true,
+    "emitDeclarationOnly": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

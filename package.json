@@ -1,6 +1,9 @@
 {
-  "name": "react-numeric-input",
-  "version": "2022.7.13",
+  "name": "@pragmasoft-ukraine/react-numeric-input",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/pragmasoft-ukraine"
+  },
+  "version": "2022.7.14",
   "files": [
     "dist"
   ],
@@ -15,7 +18,7 @@
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc --emitDeclarationOnly && mv dist/src dist/types",
+    "build": "vite build && tsc",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
