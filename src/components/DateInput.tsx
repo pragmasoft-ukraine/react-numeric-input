@@ -1,7 +1,8 @@
 import * as React from "react";
 import { assert } from "../utils";
 
-const htmlDateFormat = (date: Date) => date.toISOString().split("T")[0];
+export const htmlDateFormat = (date: Date = new Date()) =>
+  date.toISOString().split("T")[0];
 
 type HTMLInputProps = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
@@ -23,7 +24,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         },
         set(target, p, val) {
           if (p === "value" && val instanceof Date) {
-            target.value = htmlDateFormat(val);
+            target.valueAsDate = val;
           } else {
             (target as Record<typeof p, typeof val>)[p] = val;
           }
