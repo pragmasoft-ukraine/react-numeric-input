@@ -1,6 +1,10 @@
 # React numeric component
 
+Designed to work seamlessly with [react-hook-form](https://react-hook-form.com/)
+
 Wraps native input using `Proxy` exposed with `useImperativeHandle`
+
+Unstyled, like the native html input. Add `className='no-spinner'` to suppress native numeric input spinner controls
 
 ## Build
 
