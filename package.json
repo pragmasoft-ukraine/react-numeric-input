@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/pragmasoft-ukraine"
   },
-  "version": "2022.7.15",
+  "version": "2022.7.19",
   "files": [
     "dist"
   ],
@@ -15,7 +15,7 @@
       "require": "./dist/react-numeric-input.umd.js"
     }
   },
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/types/src/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
